@@ -216,6 +216,29 @@
                                 <td id="resultado"></td>
                             </tr>
                         </table>
+
+                        <script>
+                            function esPalindromo(palabra) {
+                                palabra = palabra.replace(/\s/g, '').toLowerCase();
+                                const palabraInvertida = palabra.split('').reverse().join('');
+                                return palabra === palabraInvertida;
+                            }
+
+                            function verificarPalindromo() {
+                                const palabraInput = document.getElementById("palabra");
+                                const palabraResultadoElement = document.getElementById("palabraResultado");
+                                const resultadoElement = document.getElementById("resultado");
+                                const palabra = palabraInput.value;
+
+                                palabraResultadoElement.textContent = palabra;
+                                if (esPalindromo(palabra)) {
+                                    resultadoElement.textContent = "Sí";
+                                } else {
+                                    resultadoElement.textContent = "No";
+                                }
+                            }
+                        </script>
+
                     </div>
                 </div>
             </div>
