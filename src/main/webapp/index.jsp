@@ -191,16 +191,13 @@
             <div class="column is-6-desktop">
                 <div class="card card-lg">
                     <div class="card-body">
-                        <h3 class="card-title h5">Will updates also be free?</h3>
-                        <p class="card-text content">Lorem, <a href="https://examplesite.com">link</a> <em>ipsum</em> dolor
-                            sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam
-                            omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat
-                            architecto, mollitia delectus ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo,
-                            unde cum omnis vel sed temporibus. mollitia delectus ut ab quibusdam. Magnam cumque numquam tempore
-                            reprehenderit illo, unde cum
-                            omnis vel sed temporibus. mollitia delectus ut ab quibusdam. Magnam cumque numquam tempore
-                            reprehenderit
-                            illo, unde cum omnis vel sed temporibus.</p>
+                        <h3 class="card-title h5">Verificar Palabra Para saber si es palindromo</h3>
+
+                        <form>
+                            <label for="palabra">Ingrese una palabra:</label>
+                            <input type="text" id="palabra" name="palabra">
+                            <button type="button" onclick="verificarPalindromo()">Verificar</button>
+                        </form>
                     </div>
                 </div>
             </div>
