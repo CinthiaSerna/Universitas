@@ -1,8 +1,14 @@
 package com.example.universitas;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.*;
-import jakarta.servlet.http.*;
-import jakarta.servlet.annotation.*;
+
 
 @WebServlet(name = "helloServlet", value = "/hello-servlet")
 public class HelloServlet extends HttpServlet {
@@ -12,8 +18,11 @@ public class HelloServlet extends HttpServlet {
         message = "Hello World!";
     }
 
+
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("text/html");
+
+
 
         // Hello
         PrintWriter out = response.getWriter();
